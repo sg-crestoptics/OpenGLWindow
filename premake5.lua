@@ -27,12 +27,14 @@ project "SimpleApp"
 
     includedirs
     {
-        "%{prj.name}/vendor/include"
+        "%{prj.name}/vendor/GLEW/include",
+        "%{prj.name}/vendor/GLFW/include"
     } 
 
     libdirs
     {
-        "%{prj.name}/vendor/libs",
+        "%{prj.name}/vendor/GLEW",
+        "%{prj.name}/vendor/GLFW"
     }
 
     defines{
